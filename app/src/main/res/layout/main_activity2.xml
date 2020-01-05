@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <RelativeLayout
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        app:layout_constraintTop_toTopOf="parent"
+        <ImageView
+            android:id="@+id/img"
+            android:layout_marginTop="51dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/ic_action_name"
+            android:layout_width="10.74dp"
+            android:layout_height="18.77dp"
+            android:layout_marginLeft="30dp"
+            />
+        <TextView
+            android:textColor="#000000"
+            android:id="@+id/txet"
+            android:textSize="12dp"
+            android:text="back"
+            android:layout_marginLeft="52dp"
+           android:layout_marginTop="51dp"
+            android:layout_width="30dp"
+            android:layout_height="17dp"/>
+
+        <TextView
+            android:textColor="#9F9F9F"
+            android:id="@+id/txet2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="51dp"
+            android:layout_marginRight="15dp"
+            android:text="Login"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <EditText
+
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:paddingLeft="20dp" />
+
+    <EditText
+
+        android:paddingStart="20dp"
+        app:layout_constraintTop_toBottomOf="@id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/passward"
+        android:hint="password"
+        android:inputType="numberPassword"
+        android:layout_margin="30dp"
+        android:gravity="left"
+        android:paddingLeft="20dp" />
+    <ImageButton
+        app:layout_constraintEnd_toEndOf="@+id/passward"
+        app:layout_constraintTop_toTopOf="@id/passward"
+        android:id="@+id/imgshowhide1"
+        android:layout_width="22dp"
+        android:layout_height="15dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/eye"
+        />
+
+
+    <EditText
+
+
+        android:paddingStart="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/passward"
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:inputType="text"
+        android:layout_margin="30dp"
+        android:gravity="left"
+        android:paddingLeft="20dp" />
+
+    <Button
+
+        android:id="@+id/buttonsignup"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/shapbutton"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Sign up"
+        android:textSize="20dp"
+android:textColor="#F8F2F5"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
+    <ProgressBar
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passward"
+        android:id="@+id/progressBar"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center|bottom"
+        android:layout_marginBottom="20dp"
+        android:visibility="gone" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+
+            android:id="@+id/imgback"
+
+            android:layout_width="10.74dp"
+            android:layout_height="18.77dp"
+
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/ic_action_name" />
+
+        <TextView
+            android:id="@+id/txetback"
+            android:layout_width="30dp"
+            android:layout_height="17dp"
+            android:layout_marginLeft="52dp"
+            android:layout_marginTop="51dp"
+            android:text="back"
+            android:textColor="#000000"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/txet2"
+            android:layout_width="46dp"
+            android:layout_height="17dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="51dp"
+            android:layout_marginRight="15dp"
+            android:text="sign up"
+            android:textSize="12dp"
+            android:textColor="#9F9F9F"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <EditText
+
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:paddingLeft="20dp" />
+
+    <EditText
+
+        android:paddingStart="20dp"
+        app:layout_constraintTop_toBottomOf="@id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/passward"
+        android:hint="password"
+        android:inputType="numberPassword"
+        android:layout_margin="30dp"
+        android:gravity="left"
+        android:paddingLeft="20dp"
+        />
+
+    <ImageButton
+        app:layout_constraintEnd_toEndOf="@+id/passward"
+     app:layout_constraintTop_toTopOf="@id/passward"
+        android:id="@+id/imgshowhide1"
+        android:layout_width="22dp"
+        android:layout_height="15dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/eye"
+         />
+
+        />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/shapbutton"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="log in"
+        android:textSize="20dp"
+        android:textColor="#F8F2F5"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passward" />
+
+<TextView
+    android:textColor="#C80000"
+    android:layout_margin="5dp"
+    android:padding="1dp"
+    android:textSize="12dp"
+    android:text="Forgot passward?"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:id="@+id/txet3"
+    android:layout_width="109dp"
+    android:layout_height="17dp"
+    app:layout_constraintTop_toBottomOf="@+id/passward"/>
+    <ProgressBar
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passward"
+        android:id="@+id/progressBar"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center|bottom"
+        android:layout_marginBottom="20dp"
+        android:visibility="gone" />
+</androidx.constraintlayout.widget.ConstraintLayout>

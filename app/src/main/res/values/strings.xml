@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">fierbaseB</string>
+    <string-array name="planets_array">
+        <item>@drawable/c1</item>
+        <item>@drawable/p</item>
+
+    </string-array>
+</resources>
